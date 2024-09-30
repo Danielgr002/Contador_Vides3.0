@@ -7,7 +7,7 @@
     tools:context=".FirstFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout"
+        android:id="@+id/textop1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="16dp">
@@ -56,6 +56,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:src="@drawable/baseline_arrow_downward_24"
+            android:tint="@color/design_default_color_error"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/guideline" />
@@ -65,6 +66,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:src="@drawable/baseline_arrow_upward_24"
+            android:tint="@color/design_default_color_error"
             app:layout_constraintBottom_toTopOf="@id/guideline"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
@@ -74,6 +76,7 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:src="@drawable/baseline_favorite_24"
+            android:tint="@color/design_default_color_error"
             app:layout_constraintBottom_toTopOf="@+id/up_arrow"
             app:layout_constraintEnd_toEndOf="@+id/pplusplayer1"
             app:layout_constraintStart_toStartOf="@+id/pplusplayer1"
@@ -84,10 +87,55 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:src="@drawable/baseline_favorite_border_24"
+            android:tint="@color/design_default_color_error"
             app:layout_constraintBottom_toTopOf="@+id/up_arrow"
             app:layout_constraintEnd_toEndOf="@+id/pminusp1"
             app:layout_constraintStart_toStartOf="@+id/pminusp1"
             app:layout_constraintTop_toBottomOf="@+id/pminusp1" />
+
+        <ImageButton
+            android:id="@+id/pmasbotton2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/baseline_favorite_24"
+            android:tint="@color/design_default_color_error"
+            app:layout_constraintBottom_toTopOf="@+id/pplusplayer2"
+            app:layout_constraintEnd_toEndOf="@+id/pplusplayer2"
+            app:layout_constraintStart_toStartOf="@+id/pplusplayer2"
+            app:layout_constraintTop_toBottomOf="@+id/arrow_down" />
+
+        <ImageButton
+            android:id="@+id/pminusboton2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/baseline_favorite_border_24"
+            android:tint="@color/design_default_color_error"
+            app:layout_constraintBottom_toTopOf="@+id/pminusplayer2"
+            app:layout_constraintEnd_toEndOf="@+id/pminusplayer2"
+            app:layout_constraintStart_toStartOf="@+id/pminusplayer2"
+            app:layout_constraintTop_toBottomOf="@+id/arrow_down" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="86dp"
+            android:layout_height="91dp"
+            android:text="20/0"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/up_arrow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textview2"
+            android:layout_width="65dp"
+            android:layout_height="76dp"
+            android:text="20/0"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/arrow_down" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
