@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <Button
+        android:id="@+id/pplusplayer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="P+"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/pminusp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="P-"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/pplusplayer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="P+"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/pminusplayer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="P-"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/up_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:tint="@color/design_default_color_error"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+    <ImageButton
+        android:id="@+id/arrow_down"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:tint="@color/design_default_color_error"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/up_arrow"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_forward_24" />
+
+    <ImageButton
+        android:id="@+id/cor_p1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:tint="@color/design_default_color_error"
+        app:layout_constraintBottom_toBottomOf="@+id/pplusplayer1"
+        app:layout_constraintEnd_toStartOf="@+id/up_arrow"
+        app:layout_constraintStart_toEndOf="@+id/pplusplayer1"
+        app:layout_constraintTop_toTopOf="@+id/pplusplayer1"
+        app:srcCompat="@drawable/baseline_favorite_24" />
+
+    <ImageButton
+        android:id="@+id/p1decrement"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:tint="@color/design_default_color_error"
+        app:layout_constraintBottom_toBottomOf="@+id/pminusp1"
+        app:layout_constraintEnd_toStartOf="@+id/up_arrow"
+        app:layout_constraintStart_toEndOf="@+id/pminusp1"
+        app:layout_constraintTop_toTopOf="@+id/pminusp1"
+        app:srcCompat="@drawable/baseline_favorite_border_24" />
+
+    <ImageButton
+        android:id="@+id/pmasbotton2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:tint="@color/design_default_color_error"
+        app:layout_constraintBottom_toBottomOf="@+id/pplusplayer2"
+        app:layout_constraintEnd_toStartOf="@+id/pplusplayer2"
+        app:layout_constraintStart_toEndOf="@+id/arrow_down"
+        app:layout_constraintTop_toTopOf="@+id/pplusplayer2"
+        app:srcCompat="@drawable/baseline_favorite_24" />
+
+    <ImageButton
+        android:id="@+id/pminusboton2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:tint="@color/design_default_color_error"
+        app:layout_constraintBottom_toBottomOf="@+id/pminusplayer2"
+        app:layout_constraintEnd_toStartOf="@+id/pminusplayer2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/arrow_down"
+        app:layout_constraintTop_toTopOf="@+id/pminusplayer2"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/baseline_favorite_border_24" />
+
+    <TextView
+        android:id="@+id/textViewp1"
+        android:layout_width="97dp"
+        android:layout_height="60dp"
+        android:text="20/0"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/up_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewp2"
+        android:layout_width="90dp"
+        android:layout_height="59dp"
+        android:text="20/0"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/arrow_down"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

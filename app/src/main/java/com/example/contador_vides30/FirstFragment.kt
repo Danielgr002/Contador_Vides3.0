@@ -109,8 +109,8 @@ class FirstFragment : Fragment() {
     }
 
     fun actulizar(){
-        binding.textView.text = "$vidap1/$venenop1"
-        binding.textview2.text = "$vidap2/$venenop2"
+        binding.textViewp1.text = "$vidap1/$venenop1"
+        binding.textViewp2.text = "$vidap2/$venenop2"
     }
 
     override fun onDestroyView() {

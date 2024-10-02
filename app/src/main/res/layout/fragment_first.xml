@@ -116,7 +116,7 @@
             app:layout_constraintTop_toBottomOf="@+id/arrow_down" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/textViewp1"
             android:layout_width="86dp"
             android:layout_height="91dp"
             android:text="20/0"
@@ -127,7 +127,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textview2"
+            android:id="@+id/textViewp2"
             android:layout_width="82dp"
             android:layout_height="82dp"
             android:text="20/0"
